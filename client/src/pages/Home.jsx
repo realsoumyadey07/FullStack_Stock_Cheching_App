@@ -1,6 +1,6 @@
-import LoadingSpinner from "@/components/LoadingSpinner";
-import VirtualisedList from "@/components/VirtualisedList";
-import { fetchAllFunds } from "@/redux/slices/fund";
+import LoadingSpinner from "@/components/LoadingSpinner.jsx";
+import VirtualisedList from "@/components/VirtualisedList.jsx";
+import { fetchAllFunds } from "@/redux/slices/fund.js";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 

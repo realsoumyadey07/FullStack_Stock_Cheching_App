@@ -7,10 +7,10 @@ import {
   TableCell,
   TableHeader,
   TableHead,
-} from "./ui/table";
+} from "./ui/table.jsx";
 import { Bookmark } from "lucide-react";
 import { useDispatch } from "react-redux";
-import { saveFund } from "@/redux/slices/saved";
+import { saveFund } from "@/redux/slices/saved.js";
 import toast from "react-hot-toast";
 
 export default function VirtualisedList({

@@ -1,10 +1,10 @@
 import { Search } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Input } from "./ui/input";
+import { Input } from "./ui/input.jsx";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAllFunds, fetchFundsByName } from "@/redux/slices/fund";
-import { Button } from "./ui/button";
+import { fetchAllFunds, fetchFundsByName } from "@/redux/slices/fund.js";
+import { Button } from "./ui/button.jsx";
 import {
   Dialog,
   DialogClose,
@@ -14,8 +14,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog";
-import { userLogout } from "@/redux/slices/user";
+} from "./ui/dialog.jsx";
+import { userLogout } from "@/redux/slices/user.js";
 import toast from "react-hot-toast";
 
 function Header() {

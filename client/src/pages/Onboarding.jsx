@@ -1,13 +1,13 @@
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import BackgroundImage from "../assets/images/onboarding.jpg";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.jsx";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Eye, EyeClosed } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
-import { userLogin, userRegister } from "@/redux/slices/user";
+import { userLogin, userRegister } from "@/redux/slices/user.js";
 import toast from "react-hot-toast";
 
 const loginSchema = yup

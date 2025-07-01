@@ -1,4 +1,4 @@
-import LoadingSpinner from "@/components/LoadingSpinner";
+import LoadingSpinner from "@/components/LoadingSpinner.jsx";
 import {
   Table,
   TableBody,
@@ -6,9 +6,9 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import mfApi from "@/lib/axios/mfApi";
-import { fetchAllSavedFunds, unsaveFund } from "@/redux/slices/saved";
+} from "@/components/ui/table.jsx";
+import mfApi from "@/lib/axios/mfApi.js";
+import { fetchAllSavedFunds, unsaveFund } from "@/redux/slices/saved.js";
 import { Bookmark } from "lucide-react";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";

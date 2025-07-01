@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "../layout/Layout";
-import SavedScreen from "../pages/Savedscreen";
-import Onboarding from "../pages/Onboarding";
-import Home from "../pages/Home";
-import ProtectedRoute from "@/context/ProtectedRoute";
+import Layout from "../layout/Layout.jsx";
+import SavedScreen from "../pages/Savedscreen.jsx";
+import Onboarding from "../pages/Onboarding.jsx";
+import Home from "../pages/Home.jsx";
+import ProtectedRoute from "@/context/ProtectedRoute.jsx";
 
 export default function Navigation() {
   return (
