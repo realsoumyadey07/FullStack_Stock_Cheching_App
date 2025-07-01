@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "../layout/Layout.jsx";
-import SavedScreen from "../pages/Savedscreen.jsx";
+import SavedScreen from "../pages/SavedScreen.jsx";
 import Onboarding from "../pages/Onboarding.jsx";
 import Home from "../pages/Home.jsx";
 import ProtectedRoute from "@/context/ProtectedRoute.jsx";
