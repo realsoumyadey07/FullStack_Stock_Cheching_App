@@ -47,12 +47,17 @@ function Header() {
 
   return (
     <nav className="flex justify-between items-center m-4">
-      <div className="font-semibold text-xl ">
-        <Link className="hidden sm:block" to="/home">
+      <div className="font-semibold text-xl">
+        <Link
+          className={`${
+            location.pathname === "/home" ? "hidden" : "block"
+          } sm:block`}
+          to="/home"
+        >
           Stock App
         </Link>
       </div>
-      <ul className="flex items-center justify-between gap-5 font-semibold w-full sm:w-auto">
+      <ul className="flex items-center justify-between gap-5 font-semibold w-auto sm:w-auto">
         {location.pathname === "/home" ? (
           <div className="flex items-center gap-2">
             <Input
@@ -64,8 +69,8 @@ function Header() {
             <Search className="hover:text-gray-700 cursor-pointer" />
           </div>
         ) : null}
-        <Link to="/home">Home</Link>
-        <Link to="/saved">Saved</Link>
+        <Link to="/home" className={`${location.pathname === "/home" ? "text-blue-900 underline": null}`}>Home</Link>
+        <Link to="/saved" className={`${location.pathname === "/saved" ? "text-blue-900 underline": null}`}>Saved</Link>
 
         <Dialog>
           <DialogTrigger asChild>
