@@ -43,5 +43,6 @@ mongoose
     console.error("MongoDB connection error ❌", err.message);
   });
 
-// ✅ Export the app — required for Vercel
-export default app;
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`Server is running on port ${process.env.PORT || 5000} 🚀`);
+});
